@@ -1,5 +1,6 @@
 #include "App.h"
 #include "Calculator.h"
+#include "ButtonFactory.h"
 
 wxIMPLEMENT_APP(App);
 
@@ -15,5 +16,8 @@ bool App::OnInit()
 {
 	calculator = new Calculator();
 	calculator->Show();
+
+	buttonfactory = new ButtonFactory();
+	buttonfactory->Show();
 	return true;
 }
