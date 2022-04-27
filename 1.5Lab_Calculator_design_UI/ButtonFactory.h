@@ -1,5 +1,6 @@
 #pragma once
 #include "wx/wx.h"
+
 class ButtonFactory:public wxFrame
 {
 private:
@@ -22,6 +23,8 @@ private:
 	wxButton* equal = nullptr;
 	wxTextCtrl* choice = nullptr;
 
+
+
 public:
 	wxButton* CreatezeroButton();
 	wxButton* CreateoneButton();
@@ -40,6 +43,7 @@ public:
 	wxButton* CreateacButton();
 	wxButton* CreateequalButton();
 	wxTextCtrl* CreatechoiceButton();
+
 
 	void clicker(wxCommandEvent& evt);
 

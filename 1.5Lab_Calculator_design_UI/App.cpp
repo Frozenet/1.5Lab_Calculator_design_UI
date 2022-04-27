@@ -16,8 +16,5 @@ bool App::OnInit()
 {
 	calculator = new Calculator();
 	calculator->Show();
-
-	buttonfactory = new ButtonFactory();
-	buttonfactory->Show();
 	return true;
 }
