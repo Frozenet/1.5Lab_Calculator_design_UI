@@ -1,10 +1,9 @@
 #pragma once
 #include "wx/wx.h"
 
-class ButtonFactory:public wxFrame
+class ButtonFactory: public wxFrame
 {
 private:
-
 	wxButton* zero = nullptr;
 	wxButton* one = nullptr;
 	wxButton* two = nullptr;
@@ -21,9 +20,10 @@ private:
 	wxButton* divide = nullptr;
 	wxButton* ac = nullptr; 
 	wxButton* equal = nullptr;
+	wxButton* binary = nullptr;
+	wxButton* hex = nullptr;
+	wxButton* decimal = nullptr;
 	wxTextCtrl* choice = nullptr;
-
-
 
 public:
 	wxButton* CreatezeroButton();
@@ -42,12 +42,11 @@ public:
 	wxButton* CreatedivideButton();
 	wxButton* CreateacButton();
 	wxButton* CreateequalButton();
+	wxButton* CreatebinaryButton();
+	wxButton* CreatehexButton();
+	wxButton* CreatedecimalButton();
 	wxTextCtrl* CreatechoiceButton();
 
-
-	void clicker(wxCommandEvent& evt);
-
-	wxDECLARE_EVENT_TABLE();
-
+	
 };
 

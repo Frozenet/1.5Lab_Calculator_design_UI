@@ -18,3 +18,5 @@ bool App::OnInit()
 	calculator->Show();
 	return true;
 }
+
+
