@@ -8,6 +8,8 @@ class Calculator : public wxFrame
 {
 // Make button for zero, one, two, three, four, five, six, seven, eight, nine, add, subtract, multiply, divide, equal, AC, ...
 private:
+
+
 	wxButton* zero = nullptr;
 	wxButton* one = nullptr;
 	wxButton* two = nullptr;
@@ -24,13 +26,23 @@ private:
 	wxButton* divide = nullptr;
 	wxButton* ac = nullptr;
 	wxButton* equal = nullptr;
+	wxButton* binary = nullptr;
+	wxButton* hex = nullptr;
+	wxButton* decimal = nullptr;
+	wxTextCtrl* choice = nullptr;
+
 
 	ButtonFactory num;
 
-	wxTextCtrl* choice = nullptr;
 
 public:
+
 	Calculator();
 	
+	void clicker(wxCommandEvent& evt);
+	void symbol(wxCommandEvent& evt);
+	void solve(wxCommandEvent& evt);
+
+	wxDECLARE_EVENT_TABLE();
 };
 
